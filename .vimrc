@@ -10,6 +10,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'scrooloose/syntastic'
 Bundle 'Shougo/unite.vim'
+Bundle 'shawncplus/phpcomplete.vim'
 
 " ------------------------------
 " General Settings
@@ -23,12 +24,22 @@ set shiftwidth=2              " 自動インデントの各段階における空
 " Look And Feel Settings
 " ------------------------------
 set number                    " 行番号を表示
+set title                     " タイトルを表示
 syntax on                     " 表徴表示ON
 set ruler                     " ルーラーを表示
 
 " ------------------------------
-" Syntastic Settings
+" PHP Settings
 " ------------------------------
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType php set tabstop=4
+autocmd FileType php set shiftwidth=4
+autocmd FileType php set softtabstop=4
+
+" ------------------------------
+" Plugin Settings
+" ------------------------------
+" Syntastic
 let g:syntastic_check_on_open = 1
 let g:syntastic_enable_signs = 1
 let g:syntastic_echo_current_error = 1
