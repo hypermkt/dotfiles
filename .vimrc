@@ -19,6 +19,7 @@ filetype indent on            " ファイル形式別インデントを有効に
 set expandtab                 " Tabをスペースに置き換える
 set tabstop=2                 " Tabが対応する空白数
 set shiftwidth=2              " 自動インデントの各段階における空白数
+set autoindent
 
 " ------------------------------
 " Look And Feel Settings
@@ -27,6 +28,12 @@ set number                    " 行番号を表示
 set title                     " タイトルを表示
 syntax on                     " 表徴表示ON
 set ruler                     " ルーラーを表示
+
+" ------------------------------
+" Encoding Settings
+" ------------------------------
+set encoding=utf-8
+set fileencodings=utf-8,euc-jp
 
 " ------------------------------
 " PHP Settings
