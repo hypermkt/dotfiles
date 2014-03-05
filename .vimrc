@@ -4,7 +4,7 @@
 set nocompatible " viとの互換性OFF
 filetype off     " ファイル形式の検出を無効にする
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
