@@ -4,13 +4,14 @@
 set nocompatible " viとの互換性OFF
 filetype off     " ファイル形式の検出を無効にする
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'scrooloose/syntastic'
 Bundle 'Shougo/unite.vim'
 Bundle 'shawncplus/phpcomplete.vim'
+Bundle 'vim-scripts/taglist.vim'
 
 " ------------------------------
 " General Settings
@@ -57,3 +58,11 @@ let g:syntastic_php_php_args = '-l'
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+
+" Ctags
+set tags=tags
+let Tlist_Ctags_Cmd = "/usr/bin/ctags"  " ctagsのコマンド
+let Tlist_Show_One_File = 1             " 現在表示中のファイルのみのタグしか表示しない
+let Tlist_Use_Right_Window = 1          " 右側にtag listのウインドうを表示する
+let Tlist_Exit_OnlyWindow = 1           " taglistのウインドウだけならVimを閉じる
+map <silent> <leader>l :TlistToggle<CR> " \lでtaglistウインドウを開いたり閉じたり出来るショートカット
