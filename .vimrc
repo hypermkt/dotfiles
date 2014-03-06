@@ -28,6 +28,7 @@ set number                    " 行番号を表示
 set title                     " タイトルを表示
 syntax on                     " 表徴表示ON
 set ruler                     " ルーラーを表示
+set hlsearch                  " 検索結果をハイライト
 
 " ------------------------------
 " Encoding Settings
