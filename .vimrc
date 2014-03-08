@@ -12,6 +12,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'Shougo/unite.vim'
 Bundle 'shawncplus/phpcomplete.vim'
 Bundle 'vim-scripts/taglist.vim'
+Bundle 'Shougo/neocomplete.vim'
 
 " ------------------------------
 " General Settings
@@ -66,3 +67,6 @@ let Tlist_Show_One_File = 1             " 現在表示中のファイルのみ�
 let Tlist_Use_Right_Window = 1          " 右側にtag listのウインドうを表示する
 let Tlist_Exit_OnlyWindow = 1           " taglistのウインドウだけならVimを閉じる
 map <silent> <leader>l :TlistToggle<CR> " \lでtaglistウインドウを開いたり閉じたり出来るショートカット
+
+" neocomplete
+let g:neocomplete#enable_at_startup = 1
