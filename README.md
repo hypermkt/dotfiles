@@ -10,3 +10,9 @@ git clone --recursive git@github.com:hypermkt/dotfiles.git
 ```sh
 git config --global core.editor "vim"
 ```
+
+## FAQ
+* もしPHPの文法チェックが動作しない場合
+```sh
+export PATH=$PATH:#{php_path}
+```
