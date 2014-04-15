@@ -17,6 +17,11 @@ install wget
 tap phinze/homebrew-cask
 install brew-cask
 
+cask install firefox
 cask install google-chrome
-cask install virtualbox
+cask install limechat
+cask install mi
+cask install mou
+cask install openoffice
 cask install vagrant
+cask install virtualbox
