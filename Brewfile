@@ -6,11 +6,8 @@ upgrade
 
 # パッケージのインストール
 install lua
-install phpenv
 install tree
 install tig
-install rbenv
-install ruby-build
 install wget
 
 # homebrew-caskのインストール
@@ -23,5 +20,6 @@ cask install limechat
 cask install mi
 cask install mou
 cask install openoffice
+cask install scroll-reverser
 cask install vagrant
 cask install virtualbox
