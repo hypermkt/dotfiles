@@ -16,6 +16,7 @@ install brew-cask
 
 cask install firefox
 cask install google-chrome
+cask install iterm2
 cask install limechat
 cask install mi
 cask install mou
