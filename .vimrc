@@ -40,7 +40,7 @@ set fileencodings=utf-8,euc-jp
 " ------------------------------
 " PHP Settings
 " ------------------------------
-" autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType php set tabstop=4
 autocmd FileType php set shiftwidth=4
 autocmd FileType php set softtabstop=4
@@ -68,4 +68,4 @@ autocmd FileType php set softtabstop=4
 " map <silent> <leader>l :TlistToggle<CR> " \lでtaglistウインドウを開いたり閉じたり出来るショートカット
 
 " neocomplete
-" let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_at_startup = 1
