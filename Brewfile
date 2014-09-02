@@ -12,6 +12,7 @@ install tig
 install rbenv
 install ruby-build
 install wget
+install git
 
 # homebrew-caskのインストール
 tap phinze/homebrew-cask
