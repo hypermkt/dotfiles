@@ -6,6 +6,12 @@
 git clone --recursive git@github.com:hypermkt/dotfiles.git
 ```
 
+## Cask
+
+```sh
+brew bundle
+```
+
 ## git config
 ```sh
 git config --global core.editor "vim"
