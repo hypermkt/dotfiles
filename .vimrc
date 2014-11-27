@@ -39,6 +39,11 @@ set encoding=utf-8
 set fileencodings=utf-8,euc-jp
 
 " ------------------------------
+" Markdown Settings
+" ------------------------------
+au BufNewFile,BufRead *.md :set filetype=markdown
+
+" ------------------------------
 " PHP Settings
 " ------------------------------
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
