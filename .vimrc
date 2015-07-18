@@ -11,7 +11,6 @@ Bundle 'gmarik/vundle'
 Bundle 'scrooloose/syntastic'
 Bundle 'Shougo/unite.vim'
 Bundle 'shawncplus/phpcomplete.vim'
-Bundle 'vim-scripts/taglist.vim'
 Bundle 'Shougo/neocomplete.vim'
 
 " ------------------------------
@@ -47,31 +46,14 @@ au BufNewFile,BufRead *.md :set filetype=markdown
 " PHP Settings
 " ------------------------------
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-autocmd FileType php set tabstop=4
-autocmd FileType php set shiftwidth=4
-autocmd FileType php set softtabstop=4
+autocmd FileType php set tabstop=2
+autocmd FileType php set shiftwidth=2
+autocmd FileType php set softtabstop=2
 
-" ------------------------------
-" Plugin Settings
-" ------------------------------
-" Syntastic
-let g:syntastic_check_on_open = 1
-let g:syntastic_enable_signs = 1
-let g:syntastic_echo_current_error = 1
-let g:syntastic_auto_loc_list = 2
-let g:syntastic_enable_highlighting = 1
-let g:syntastic_php_php_args = '-l'
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+autocmd FileType html set tabstop=2
+autocmd FileType html set shiftwidth=2
+autocmd FileType html set softtabstop=2
 
-" Ctags
-set tags=tags
-let Tlist_Ctags_Cmd = "/usr/bin/ctags"  " ctagsのコマンド
-let Tlist_Show_One_File = 1             " 現在表示中のファイルのみのタグしか表示しない
-let Tlist_Use_Right_Window = 1          " 右側にtag listのウインドうを表示する
-let Tlist_Exit_OnlyWindow = 1           " taglistのウインドウだけならVimを閉じる
-map <silent> <leader>l :TlistToggle<CR> " \lでtaglistウインドウを開いたり閉じたり出来るショートカット
-
-" neocomplete
-let g:neocomplete#enable_at_startup = 1
+autocmd FileType ctp set tabstop=2
+autocmd FileType ctp set shiftwidth=2
+autocmd FileType ctp set softtabstop=2
