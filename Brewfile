@@ -1,27 +1,18 @@
-# Homebrewを最新版にアップデート
-update
+brew 'lua'
+brew 'lua51'
+brew 'tree'
+brew 'tig'
+brew 'wget'
+brew 'git'
+brew 'git-flow'
 
-# Formulaを更新
-upgrade
-
-# パッケージのインストール
-install lua
-install tree
-install tig
-install wget
-install git
-
-# homebrew-caskのインストール
-tap phinze/homebrew-cask
-install brew-cask
-
-cask install firefox
-cask install google-chrome
-cask install iterm2
-cask install limechat
-cask install mi
-cask install mou
-cask install openoffice
-cask install scroll-reverser
-cask install vagrant
-cask install virtualbox
+tap 'caskroom/cask'
+cask 'firefox'
+cask 'google-chrome'
+cask 'iterm2'
+cask 'mi'
+cask 'mou'
+cask 'openoffice'
+cask 'scroll-reverser'
+cask 'vagrant'
+cask 'virtualbox'
