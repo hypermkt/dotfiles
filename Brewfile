@@ -4,7 +4,6 @@ brew 'tree'
 brew 'tig'
 brew 'wget'
 brew 'git'
-brew 'git-flow'
 
 tap 'caskroom/cask'
 cask 'firefox'
