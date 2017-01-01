@@ -4,8 +4,12 @@ brew 'tree'
 brew 'tig'
 brew 'wget'
 brew 'git'
+brew 'go'
+brew 'peco'
 
+# ref: https://caskroom.github.io/
 tap 'caskroom/cask'
+
 cask 'firefox'
 cask 'google-chrome'
 cask 'iterm2'
