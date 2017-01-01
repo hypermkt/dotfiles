@@ -7,6 +7,9 @@ brew 'git'
 brew 'go'
 brew 'peco'
 
+# ------------------------------
+# Install by Homebrew Cask
+# ------------------------------
 # ref: https://caskroom.github.io/
 tap 'caskroom/cask'
 
@@ -20,3 +23,5 @@ cask 'scroll-reverser'
 cask 'vagrant'
 cask 'virtualbox'
 cask 'skitch'
+cask 'slack'
+cask 'hipchat'
