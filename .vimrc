@@ -1,17 +1,20 @@
 " ------------------------------
-" Bundle Settings
+" Vim Settings
 " ------------------------------
 set nocompatible " viとの互換性OFF
 filetype off     " ファイル形式の検出を無効にする
 
-set rtp+=~/.vim/vundle/
-call vundle#rc()
+" For vim-plug
+call plug#begin('~/.vim/plugged')
 
-Bundle 'gmarik/vundle'
-Bundle 'scrooloose/syntastic'
-Bundle 'Shougo/unite.vim'
-Bundle 'shawncplus/phpcomplete.vim'
-Bundle 'Shougo/neocomplete.vim'
+" Syntax checking hacks for vim
+Plug 'scrooloose/syntastic'
+
+" Improved PHP omnicompletion
+Plug 'shawncplus/phpcomplete.vim'
+
+" Keyword Completion
+Plug 'Shougo/neocomplete.vim'
 
 " ------------------------------
 " General Settings

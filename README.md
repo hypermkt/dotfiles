@@ -15,6 +15,14 @@ brew tap Homebrew/bundle
 brew bundle
 ```
 
+## Vim
+* [vim-plug](https://github.com/junegunn/vim-plug)を利用してVim pluginを管理
+
+```sh
+# Pluginをインストールする
+:PlugInstall
+```
+
 ## git config
 ```sh
 git config --global core.editor "vim"
