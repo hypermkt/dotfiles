@@ -21,6 +21,7 @@ set expandtab                 " Tabをスペースに置き換える
 set tabstop=2                 " Tabが対応する空白数
 set shiftwidth=2              " 自動インデントの各段階における空白数
 set autoindent
+set paste
 
 " ------------------------------
 " Look And Feel Settings
@@ -41,6 +42,7 @@ set fileencodings=utf-8,euc-jp
 " Markdown Settings
 " ------------------------------
 au BufNewFile,BufRead *.md :set filetype=markdown
+au BufNewFile,BufRead *.vue set filetype=html
 
 " ------------------------------
 " PHP Settings
