@@ -48,7 +48,7 @@ au BufNewFile,BufRead *.md :set filetype=markdown
 au BufNewFile,BufRead *.vue set filetype=html
 
 " ------------------------------
-" PHP Settings
+" Indent Settings
 " ------------------------------
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType php set tabstop=2
@@ -59,6 +59,7 @@ autocmd FileType html set tabstop=2
 autocmd FileType html set shiftwidth=2
 autocmd FileType html set softtabstop=2
 
+" CakePHP Template
 autocmd FileType ctp set tabstop=2
 autocmd FileType ctp set shiftwidth=2
 autocmd FileType ctp set softtabstop=2
