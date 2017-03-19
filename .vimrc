@@ -1,7 +1,6 @@
 " ------------------------------
 " Vim Settings
 " ------------------------------
-set nocompatible " viとの互換性OFF
 filetype off     " ファイル形式の検出を無効にする
 
 " For vim-plug
