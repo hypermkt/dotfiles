@@ -1,6 +1,8 @@
 " ------------------------------
 " Vim Settings
 " ------------------------------
+
+set nocompatible
 filetype off     " ファイル形式の検出を無効にする
 
 " For vim-plug
@@ -14,6 +16,7 @@ Plug 'shawncplus/phpcomplete.vim'
 
 " Keyword Completion
 Plug 'Shougo/neocomplete.vim'
+Plug 'mattn/emmet-vim'
 
 " ------------------------------
 " General Settings
