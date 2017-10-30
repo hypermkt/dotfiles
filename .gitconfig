@@ -1,0 +1,17 @@
+[user]
+	name = Makoto Chiba
+	email = hypermkt@gmail.com
+[alias]
+	ci = commit
+	co = checkout
+	s = status
+	b = branch
+[color]
+  ui = true
+[core]
+  editor= '/usr/local/Cellar/vim/7.4.161/bin/vim'
+[merge "mergepbx"]
+  name = XCode project files merger
+  driver = mergepbx %O %A %B
+[ghq]
+  root = ~/src
