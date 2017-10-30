@@ -18,8 +18,6 @@ Plug 'shawncplus/phpcomplete.vim'
 Plug 'Shougo/neocomplete.vim'
 Plug 'mattn/emmet-vim'
 
-Plug 'fatih/vim-go'
-
 call plug#end()
 
 " ------------------------------
