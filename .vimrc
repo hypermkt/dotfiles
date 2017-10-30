@@ -18,6 +18,10 @@ Plug 'shawncplus/phpcomplete.vim'
 Plug 'Shougo/neocomplete.vim'
 Plug 'mattn/emmet-vim'
 
+Plug 'fatih/vim-go'
+
+call plug#end()
+
 " ------------------------------
 " General Settings
 " ------------------------------
@@ -26,7 +30,7 @@ set expandtab                 " Tabをスペースに置き換える
 set tabstop=2                 " Tabが対応する空白数
 set shiftwidth=2              " 自動インデントの各段階における空白数
 set autoindent
-"set paste
+set paste
 
 " ------------------------------
 " Look And Feel Settings
@@ -65,3 +69,12 @@ autocmd FileType html set softtabstop=2
 autocmd FileType ctp set tabstop=2
 autocmd FileType ctp set shiftwidth=2
 autocmd FileType ctp set softtabstop=2
+
+" ------------------------------
+" vim-go Settings
+" ------------------------------
+au BufNewFile,BufRead *.go set filetype=go
+
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
