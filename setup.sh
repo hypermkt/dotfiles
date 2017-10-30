@@ -3,6 +3,25 @@
 # ref: https://qiita.com/AkkeyLab/items/68680a397d545a2dfaff
 
 # ----------------------------
+# dotfiles
+# ----------------------------
+
+if [ ! -f ~/.bashrc ]; then
+  echo "Linking .bashrc"
+  ln -s ~/dotfiles/.bashrc ~/.bashrc
+fi
+
+if [ ! -f ~/.vimrc ]; then
+  echo "Linking .vimrc"
+  ln -s ~/dotfiles/.vimrc ~/.vimrc
+fi
+
+if [ ! -d ~/.vim ]; then
+  echo "Creating direcory .vim"
+  ln -s ~/dotfiles/.vim ~/.vim
+fi
+
+# ----------------------------
 # Install CUI Apps by Homebrew
 # ----------------------------
 if [ -e /usr/local/bin/brew ]; then
