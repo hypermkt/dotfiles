@@ -42,6 +42,9 @@ brew cask install skitch
 brew cask install hipchat
 brew cask install docker
 brew cask install gitify
+brew cask install phpstorm
+brew cask install licecap
+brew cask install inkdrop
 
 # ----------------------------
 # Install App Store Apps by mas
@@ -54,4 +57,4 @@ mas install 409183694 # Keynote (6.6.2)
 mas install 803453959 # Slack (2.8.2)
 mas install 458034879 # Dash (2.2.6)
 mas install 539883307 # LINE (5.3.3)
-mas install 405843582 # Alfred
+# Alfred2のID不明
