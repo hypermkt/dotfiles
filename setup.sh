@@ -46,6 +46,9 @@ brew install bash-completion
 # For PHP
 brew install re2c openssl libjpeg libpng icu4c libmcrypt autoconf automake
 
+# For Ruby
+brew install ruby-build
+
 # ----------------------------
 # Install GUI Apps by Homebrew-Cask
 # ----------------------------
