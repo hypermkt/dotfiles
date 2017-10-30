@@ -41,6 +41,7 @@ brew install wget
 brew install git
 brew install go
 brew install peco
+brew install bash-completion
 
 # ----------------------------
 # Install GUI Apps by Homebrew-Cask

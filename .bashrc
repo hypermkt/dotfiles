@@ -15,32 +15,25 @@ HISTTIMEFORMAT='%Y/%m/%d %H:%M:%S '
 alias dc='docker-compose'
 alias t='tmux'
 alias ll='ls -la'
-alias vim='/usr/local/Cellar/vim/7.4.161/bin/vim'
+#alias vim='/usr/local/Cellar/vim/7.4.161/bin/vim'
 alias be='bundle exec'
 
 # --------------------------------------------------------------
 # Console
 # --------------------------------------------------------------
 
+export PATH=/usr/local/bin:/usr/local/bin/bin:$PATH
+export PATH=/usr/local/opt/openssl/bin:$PATH
+
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
 # Git Branch Display Setting
+# Require bash completion
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWSTASHSTATE=true
 GIT_PS1_SHOWUNTRACKEDFILES=true
 GIT_PS1_SHOWUPSTREAM=auto
 export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
-
-export PATH=/usr/local/bin:/usr/local/bin/bin:$PATH
-export PATH=/usr/local/opt/openssl/bin:$PATH
-
-if [ -f ~/bash_completion.d/git-prompt.sh ]; then
-    source ~/bash_completion.d/git-prompt.sh
-fi
-if [ -f ~/bash_completion.d/git-completion.bash ]; then
-    source ~/bash_completion.d/git-completion.bash
-fi
-if [ -f ~/bash_completion.d/git-flow-completion.bash ]; then
-    source ~/bash_completion.d/git-flow-completion.bash
-fi
 
 # --------------------------------------------------------------
 # Programming Languages
