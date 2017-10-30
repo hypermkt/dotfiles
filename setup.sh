@@ -39,9 +39,19 @@ brew cask install openoffice
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install skitch
+brew cask install hipchat
+brew cask install docker
+brew cask install gitify
 
 # ----------------------------
 # Install App Store Apps by mas
 # ----------------------------
+# ref: https://github.com/mas-cli/mas
 
-#brew install mas
+brew install mas
+
+mas install 409183694 # Keynote (6.6.2)
+mas install 803453959 # Slack (2.8.2)
+mas install 458034879 # Dash (2.2.6)
+mas install 539883307 # LINE (5.3.3)
+mas install 405843582 # Alfred
