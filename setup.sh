@@ -30,12 +30,11 @@ echo "\nInstalling GUI Apps by Homebrew-Cask..."
 
 brew tap caskroom/cask
 
-brew cask install firefox
+#brew cask install firefox
 brew cask install google-chrome
 brew cask install iterm2
 brew cask install mi
-brew cask install mou
-brew cask install openoffice
+#brew cask install openoffice
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install skitch
@@ -53,7 +52,7 @@ brew cask install inkdrop
 
 brew install mas
 
-mas install 409183694 # Keynote (6.6.2)
+#mas install 409183694 # Keynote (6.6.2)
 mas install 803453959 # Slack (2.8.2)
 mas install 458034879 # Dash (2.2.6)
 mas install 539883307 # LINE (5.3.3)
