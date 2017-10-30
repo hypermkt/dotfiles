@@ -9,7 +9,7 @@
 [color]
   ui = true
 [core]
-  editor= '/usr/local/Cellar/vim/7.4.161/bin/vim'
+  #editor= '/usr/local/Cellar/vim/7.4.161/bin/vim'
 [merge "mergepbx"]
   name = XCode project files merger
   driver = mergepbx %O %A %B
