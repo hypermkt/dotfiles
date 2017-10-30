@@ -43,6 +43,9 @@ brew install go
 brew install peco
 brew install bash-completion
 
+# For PHP
+brew install re2c openssl libjpeg libpng icu4c libmcrypt autoconf automake
+
 # ----------------------------
 # Install GUI Apps by Homebrew-Cask
 # ----------------------------

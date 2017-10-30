@@ -11,7 +11,12 @@ $ /bin/sh ./setup.sh
 ```
 * vimで`PlugInstall`を実行する
 
-## git config
+### git config
 ```sh
 git config --global core.editor "vim"
 ```
+
+### PHP
+* Install [CHH/phpenv](https://github.com/CHH/phpenv)
+* `git clone https://github.com/CHH/php-build.git ~/.phpenv/plugins/php-build`
+* `phpenv install 7.1.9`
