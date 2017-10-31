@@ -73,6 +73,7 @@ brew cask install gitify
 brew cask install phpstorm
 brew cask install licecap
 brew cask install inkdrop
+brew cask install sequel-pro
 
 # ----------------------------
 # Install App Store Apps by mas
