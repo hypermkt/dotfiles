@@ -40,11 +40,8 @@ export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)
 # --------------------------------------------------------------
 
 # rbenv & phpenv
-export PATH=$HOME/.rbenv/bin:$PATH
-eval "$(rbenv init -)"
-
-export PATH=$HOME/.phpenv/bin:$PATH
-eval "$(phpenv init -)"
+#export PATH=$HOME/.rbenv/bin:$PATH
+#eval "$(rbenv init -)"
 
 # go
 export GOPATH=$HOME
@@ -99,3 +96,6 @@ alias g='cd $(ghq root)/$(ghq list | peco)'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# ref: http://phpbrew.github.io/phpbrew/
+[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
