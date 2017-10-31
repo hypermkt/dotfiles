@@ -44,7 +44,10 @@ brew install peco
 brew install bash-completion
 
 # For PHP
-brew install re2c openssl libjpeg libpng icu4c libmcrypt autoconf automake
+brew install automake autoconf curl pcre bison re2c mhash libtool icu4c gettext jpeg openssl libxml2 mcrypt gmp libevent
+brew link icu4c
+brew link --force openssl
+brew link --force libxml2
 
 # For Ruby
 brew install ruby-build
