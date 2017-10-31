@@ -50,7 +50,7 @@ brew link --force openssl
 brew link --force libxml2
 
 # For Ruby
-brew install ruby-build
+brew install rbenv
 
 # ----------------------------
 # Install GUI Apps by Homebrew-Cask

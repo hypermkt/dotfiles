@@ -38,10 +38,7 @@ export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)
 # --------------------------------------------------------------
 # Programming Languages
 # --------------------------------------------------------------
-
-# rbenv & phpenv
-#export PATH=$HOME/.rbenv/bin:$PATH
-#eval "$(rbenv init -)"
+eval "$(rbenv init -)"
 
 # go
 export GOPATH=$HOME
