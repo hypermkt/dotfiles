@@ -42,6 +42,7 @@ brew install git
 brew install go
 brew install peco
 brew install bash-completion
+brew install reattach-to-user-namespace
 
 # For PHP
 brew install automake autoconf curl pcre bison re2c mhash libtool icu4c gettext jpeg openssl libxml2 mcrypt gmp libevent
