@@ -61,6 +61,7 @@ brew install rbenv
 echo "\nInstalling GUI Apps by Homebrew-Cask..."
 
 brew tap caskroom/cask
+brew tap caskroom/versions
 
 #brew cask install firefox
 brew cask install google-chrome
