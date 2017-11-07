@@ -28,6 +28,7 @@ set expandtab                 " Tabをスペースに置き換える
 set tabstop=2                 " Tabが対応する空白数
 set shiftwidth=2              " 自動インデントの各段階における空白数
 set autoindent
+" これが有効だとなぜかタブに戻ってしまうので一旦コメントアウト
 "set paste
 
 " ------------------------------
