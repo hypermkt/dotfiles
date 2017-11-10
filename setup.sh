@@ -46,6 +46,7 @@ brew install reattach-to-user-namespace
 brew install gibo
 brew install tmux
 brew install ag
+brew install phpbrew
 
 # For PHP
 brew install automake autoconf curl pcre bison re2c mhash libtool icu4c gettext jpeg openssl libxml2 mcrypt gmp libevent
