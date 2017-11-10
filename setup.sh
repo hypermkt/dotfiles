@@ -49,7 +49,7 @@ brew install ag
 brew install phpbrew
 
 # For PHP
-brew install automake autoconf curl pcre bison re2c mhash libtool icu4c gettext jpeg openssl libxml2 mcrypt gmp libevent
+brew install automake autoconf curl pcre bison re2c mhash libtool icu4c gettext jpeg openssl libxml2 mcrypt gmp libevent bzip2
 brew link icu4c
 brew link --force openssl
 brew link --force libxml2
