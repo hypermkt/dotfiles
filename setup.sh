@@ -48,6 +48,7 @@ brew install tmux
 brew install ag
 brew install phpbrew
 brew install awscli
+brew install postgresql
 
 # For PHP
 brew install automake autoconf curl pcre bison re2c mhash libtool icu4c gettext jpeg openssl libxml2 mcrypt gmp libevent bzip2
