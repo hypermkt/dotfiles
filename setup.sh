@@ -50,6 +50,7 @@ brew install phpbrew
 brew install awscli
 brew install postgresql
 brew install packer
+brew install terraform
 
 # For PHP
 brew install automake autoconf curl pcre bison re2c mhash libtool icu4c gettext jpeg openssl libxml2 mcrypt gmp libevent bzip2
