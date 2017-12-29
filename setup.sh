@@ -85,6 +85,7 @@ brew cask install phpstorm
 brew cask install licecap
 brew cask install inkdrop
 brew cask install sequel-pro
+brew cask install visual-studio-code
 
 # ----------------------------
 # Install App Store Apps by mas
