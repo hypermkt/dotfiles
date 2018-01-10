@@ -53,6 +53,7 @@ brew install packer
 brew install terraform
 brew install jq
 brew install yarn
+brew install ansible
 
 # For PHP
 brew install automake autoconf curl pcre bison re2c mhash libtool icu4c gettext jpeg openssl libxml2 mcrypt gmp libevent bzip2
