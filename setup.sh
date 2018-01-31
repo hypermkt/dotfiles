@@ -16,11 +16,6 @@ if [ ! -f ~/.vimrc ]; then
   ln -s ~/dotfiles/.vimrc ~/.vimrc
 fi
 
-if [ ! -d ~/.vim ]; then
-  echo "Creating direcory .vim"
-  ln -s ~/dotfiles/.vim ~/.vim
-fi
-
 # ----------------------------
 # Install CUI Apps by Homebrew
 # ----------------------------
@@ -54,6 +49,7 @@ brew install terraform
 brew install jq
 brew install yarn
 brew install ansible
+brew install heroku
 
 # For PHP
 brew install automake autoconf curl pcre bison re2c mhash libtool icu4c gettext jpeg openssl libxml2 mcrypt gmp libevent bzip2
