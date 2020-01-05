@@ -22,8 +22,10 @@ alias be='bundle exec'
 # Console
 # --------------------------------------------------------------
 
-export PATH=/usr/local/bin:/usr/local/bin/bin:$PATH
-export PATH=/usr/local/opt/openssl/bin:$PATH
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/openssl/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl/include"
+
 
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
@@ -41,8 +43,9 @@ export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)
 eval "$(rbenv init -)"
 
 # go
-export GOPATH=$HOME
+export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+export GO111MODULE=on
 
 # peco
 export HISTCONTROL="ignoredups"
@@ -76,7 +79,7 @@ peco-history() {
     history -d $((HISTCMD-1))
   fi
 }
-bind '"\C-r":"peco-history\n"'
+#bind '"\C-r":"peco-history\n"'
 
 # npm
 NPM_PACKAGES="${HOME}/.npm-packages"
@@ -96,3 +99,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # ref: http://phpbrew.github.io/phpbrew/
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
+
+# Read direnv
+# https://direnv.net/
+eval "$(direnv hook bash)"
