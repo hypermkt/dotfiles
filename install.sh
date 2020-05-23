@@ -15,6 +15,11 @@ function dev_tools() {
     brew $1 tmux
     brew $1 ag
     brew $1 jq
+    brew $1 awscli
+    brew $1 rbenv
+    brew $1 terraform
+    brew $1 docker
+    brew $1 docker-compose
 }
 
 function _main() {
