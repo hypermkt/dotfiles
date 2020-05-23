@@ -5,6 +5,12 @@
 
 ## Setup 
 
+### fish
+```sh
+brew install fish
+ln -s ~/ghq/github.com/hypermkt/dotfiles/fish/ ~/.config/fish
+```
+
 ### .bashrc
 ```
 $ ln -s ~/dotfiles/.bashrc ~/.bashrc
