@@ -22,3 +22,9 @@ set __fish_git_prompt_char_upstream_behind '-'
 
 # rbenv
 status --is-interactive; and source (rbenv init -|psub)
+
+# openssl
+set -g fish_user_paths "/usr/local/opt/openssl@1.1/bin" $fish_user_paths
+set -gx LDFLAGS "-L/usr/local/opt/openssl@1.1/lib"
+set -gx CPPFLAGS "-I/usr/local/opt/openssl@1.1/include"
+set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
