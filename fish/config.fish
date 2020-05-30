@@ -29,3 +29,9 @@ eval (nodenv init - | source)
 # yvm
 set -x YVM_DIR /Users/hypermkt/.yvm
 [ -r $YVM_DIR/yvm.fish ]; and source $YVM_DIR/yvm.fish
+
+# openssl
+set -g fish_user_paths "/usr/local/opt/openssl@1.1/bin" $fish_user_paths
+set -gx LDFLAGS "-L/usr/local/opt/openssl@1.1/lib"
+set -gx CPPFLAGS "-I/usr/local/opt/openssl@1.1/include"
+set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
