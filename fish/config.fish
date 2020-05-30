@@ -22,3 +22,10 @@ set __fish_git_prompt_char_upstream_behind '-'
 
 # rbenv
 status --is-interactive; and source (rbenv init -|psub)
+
+# nodenv
+eval (nodenv init - | source)
+
+# yvm
+set -x YVM_DIR /Users/hypermkt/.yvm
+[ -r $YVM_DIR/yvm.fish ]; and source $YVM_DIR/yvm.fish
