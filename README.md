@@ -24,6 +24,13 @@ $ ln -s ~/dotfiles/.vimrc ~/.vimrc
 
 ### git config
 ```sh
+git config --global user.name "xxx"
+git config --global user.email xxx
+
+git config --global alias.s status
+git config --global alias.ci commit
+git config --global alias.b branch
+
 git config --global core.editor "vim"
 ```
 
