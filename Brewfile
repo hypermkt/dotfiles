@@ -4,6 +4,8 @@ brew "tree"
 brew "tig"
 brew "rbenv"
 brew "bear"
+brew "jq"
+brew "wget"
 
 cask "alfred"
 cask "docker"
