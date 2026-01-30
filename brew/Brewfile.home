@@ -1,3 +1,5 @@
 brew "packer"
 brew "terraform"
 brew "awscli"
+
+cask "spectacle"

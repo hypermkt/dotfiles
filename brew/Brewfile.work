@@ -1,0 +1,10 @@
+brew "colima"
+brew "git-wt"
+brew "docker"
+brew "docker-compose"
+brew "docker-credential-helper"
+
+cask "rectangle"
+cask "notion"
+cask "tableplus"
+cask "postman"
