@@ -1,0 +1,20 @@
+# CLI command
+brew "ghq"
+brew "peco"
+brew "tree"
+brew "tig"
+brew "wget"
+brew "jq"
+
+# programming
+brew "rbenv"
+brew "gh"
+brew "git"
+
+cask "alfred"
+cask "rectangle"
+cask "skitch"
+cask "visual-studio-code"
+cask "ghostty"
+cask "google-chrome"
+cask "slack"
