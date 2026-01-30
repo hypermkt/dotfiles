@@ -5,11 +5,13 @@ brew "tree"
 brew "tig"
 brew "wget"
 brew "jq"
+brew "ag"
 
 # programming
 brew "rbenv"
 brew "gh"
 brew "git"
+brew "go"
 
 cask "alfred"
 cask "spectacle"
