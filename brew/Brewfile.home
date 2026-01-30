@@ -1,1 +1,2 @@
 brew "packer"
+brew "terraform"

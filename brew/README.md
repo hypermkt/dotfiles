@@ -1,10 +1,6 @@
 # Brewfile
 
 ```
-./install.sh
-```
-
-```
 ./install.sh home
 ```
 

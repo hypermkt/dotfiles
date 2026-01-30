@@ -12,7 +12,7 @@ brew "gh"
 brew "git"
 
 cask "alfred"
-cask "rectangle"
+cask "spectacle"
 cask "skitch"
 cask "visual-studio-code"
 cask "ghostty"
