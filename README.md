@@ -10,6 +10,11 @@
 $ ln -s ~/dotfiles/.bashrc ~/.bashrc
 ```
 
+### zsh
+```
+ln -s ~/dotfiles/.zshrc ~/.bashrc
+```
+
 ### .vimrc
 
 ```
