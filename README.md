@@ -5,14 +5,14 @@
 
 ## Setup 
 
-### .bashrc
 ```
-$ ln -s ~/dotfiles/.bashrc ~/.bashrc
+# ローカルディレクトリの場所はよしなに修正
+ln -s ~/ghq/github.com/hypermkt/dotfiles ~/dotfiles
 ```
 
 ### zsh
 ```
-ln -s ./.zshrc ~/.zshrc
+ln -s ./dotfiles/.zshrc ~/.zshrc
 ```
 
 ### .vimrc
