@@ -23,6 +23,11 @@ ln -s ./dotfiles/.zshrc ~/.zshrc
 $ ln -s ~/dotfiles/.vimrc ~/.vimrc
 ```
 
+### nvim
+```
+ln -s ~/dotfiles/nvim ~/.config/nvim
+```
+
 ### Ghostty
 
 ```
