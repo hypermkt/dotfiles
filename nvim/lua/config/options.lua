@@ -1,3 +1,6 @@
+-- Leader key
+vim.g.mapleader = ","
+
 -- 行番号表示
 vim.opt.number = true
 
