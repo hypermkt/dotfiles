@@ -28,6 +28,12 @@ $ ln -s ~/dotfiles/.vimrc ~/.vimrc
 ln -s ~/dotfiles/nvim ~/.config/nvim
 ```
 
+* `,e`: nvim-treeを開く
+* `,ff`: ファイル検索 (Telescope)
+* `,fg`: 文字列検索 (Telescope / 要ripgrep)
+* `,fb`: バッファ検索 (Telescope)
+* `,fh`: ヘルプ検索 (Telescope)
+
 ### Ghostty
 
 ```
