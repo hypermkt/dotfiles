@@ -11,9 +11,6 @@ call plug#begin('~/.vim/plugged')
 " Syntax checking hacks for vim
 Plug 'scrooloose/syntastic'
 
-" Improved PHP omnicompletion
-Plug 'shawncplus/phpcomplete.vim'
-
 " Keyword Completion
 Plug 'Shougo/neocomplete.vim'
 Plug 'mattn/emmet-vim'
@@ -55,19 +52,9 @@ au BufNewFile,BufRead *.vue set filetype=html
 " ------------------------------
 " Indent Settings
 " ------------------------------
-autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-autocmd FileType php set tabstop=2
-autocmd FileType php set shiftwidth=2
-autocmd FileType php set softtabstop=2
-
 autocmd FileType html set tabstop=2
 autocmd FileType html set shiftwidth=2
 autocmd FileType html set softtabstop=2
-
-" CakePHP Template
-autocmd FileType ctp set tabstop=2
-autocmd FileType ctp set shiftwidth=2
-autocmd FileType ctp set softtabstop=2
 
 " ------------------------------
 " vim-go Settings

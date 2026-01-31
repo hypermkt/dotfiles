@@ -97,9 +97,6 @@ alias g='cd $(ghq root)/$(ghq list | peco)'
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-# ref: http://phpbrew.github.io/phpbrew/
-[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
-
 # Read direnv
 # https://direnv.net/
 eval "$(direnv hook bash)"
