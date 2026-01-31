@@ -23,6 +23,16 @@ ln -s ./dotfiles/.zshrc ~/.zshrc
 $ ln -s ~/dotfiles/.vimrc ~/.vimrc
 ```
 
+### Ghostty
+
+```
+# macOS固有の設定を削除
+rm -rf ~/Library/Application\ Support/com.mitchellh.ghostty/
+
+# シンボリックリンクを作成
+mkdir -p ~/.config/ghostty && ln -s ~/dotfiles/ghostty/config ~/.config/ghostty/config
+```
+
 ### git config
 
 ```sh
