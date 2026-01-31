@@ -14,6 +14,7 @@ Plug 'scrooloose/syntastic'
 " Keyword Completion
 Plug 'Shougo/neocomplete.vim'
 Plug 'mattn/emmet-vim'
+Plug 'EdenEast/nightfox.nvim'
 
 call plug#end()
 
@@ -36,6 +37,7 @@ set title                     " タイトルを表示
 syntax on                     " 表徴表示ON
 set ruler                     " ルーラーを表示
 set hlsearch                  " 検索結果をハイライト
+colorscheme nightfox
 
 " ------------------------------
 " Encoding Settings
