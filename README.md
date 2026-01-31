@@ -34,6 +34,14 @@ ln -s ~/dotfiles/nvim ~/.config/nvim
 * `,fb`: バッファ検索 (Telescope)
 * `,fh`: ヘルプ検索 (Telescope)
 
+#### VS Code風キーバインディング
+* `Ctrl+p`: ファイル検索
+* `Ctrl+f`: 文字列検索
+* `Ctrl+b`: サイドバー開閉
+* `Ctrl+/`: コメントアウト切替
+* `Ctrl+h/j/k/l`: ウィンドウ移動
+
+
 ### Ghostty
 
 ```

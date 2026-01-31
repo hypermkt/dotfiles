@@ -21,5 +21,8 @@ return {
 
     -- <leader>e でツリーをトグル
     vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>', { silent = true })
+    
+    -- VS Code like Ctrl+b
+    vim.keymap.set('n', '<C-b>', ':NvimTreeToggle<CR>', { silent = true })
   end
 }
