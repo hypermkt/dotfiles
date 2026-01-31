@@ -3,6 +3,7 @@ alias dc='docker compose'
 alias be='bundle exec'
 alias ll='ls -la'
 alias g='cd $(ghq list -p | peco)'
+alias vim='nvim'
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
