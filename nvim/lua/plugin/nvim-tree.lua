@@ -21,6 +21,9 @@ return {
       vim.keymap.set('n', '<Right>', api.node.open.edit, opts('Open'))
       -- 左キー: ディレクトリを閉じる、または親ディレクトリに移動して閉じる
       vim.keymap.set('n', '<Left>',  api.node.navigate.parent_close, opts('Close Directory'))
+
+      -- シングルクリックでディレクトリを開閉・ファイルを開く（VS Code風）
+      vim.keymap.set('n', '<LeftRelease>', api.node.open.edit, opts('Open'))
     end
 
     require('nvim-tree').setup({
