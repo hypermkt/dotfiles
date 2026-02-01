@@ -12,6 +12,9 @@ vim.opt.tabstop = 2
 -- クリップボード共有
 vim.opt.clipboard = "unnamedplus"
 
+-- 長い行を折り返さない
+vim.opt.wrap = false
+
 -- 基本コマンド
 vim.cmd("syntax on")
 vim.cmd("filetype plugin indent on")
