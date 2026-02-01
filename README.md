@@ -26,6 +26,7 @@ $ ln -s ~/dotfiles/.vimrc ~/.vimrc
 ### nvim
 ```
 ln -s ~/dotfiles/nvim ~/.config/nvim
+
 ```
 
 * `,e`: nvim-treeを開く
