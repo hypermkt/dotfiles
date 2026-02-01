@@ -13,3 +13,6 @@ vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv", { desc = "Move line up" })
 -- Indent (Tab/Shift+Tab in visual mode)
 vim.keymap.set("v", "<Tab>", ">gv", { desc = "Indent" })
 vim.keymap.set("v", "<S-Tab>", "<gv", { desc = "Outdent" })
+
+-- Copy with Ctrl+C (Visual mode)
+vim.keymap.set("v", "<C-c>", "y", { desc = "Copy to clipboard" })
