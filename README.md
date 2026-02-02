@@ -53,11 +53,21 @@ ln -s ~/dotfiles/nvim ~/.config/nvim
 | `,hb` | 行のコミット履歴を表示 (Blame Line) |
 
 #### VS Code風キーバインディング
-* `Ctrl+p`: ファイル検索
-* `Ctrl+f`: 文字列検索
-* `Ctrl+b`: サイドバー開閉
-* `Ctrl+/`: コメントアウト切替
-* `Ctrl+h/j/k/l`: ウィンドウ移動
+| Key | Description |
+| :--- | :--- |
+| `Ctrl+p` | ファイル検索 |
+| `Ctrl+f` | 文字列検索 |
+| `Ctrl+b` | サイドバー開閉 |
+| `Ctrl+/` | コメントアウト切替 |
+| `Ctrl+h` | 左ウィンドウへ移動 |
+| `Ctrl+j` | 下ウィンドウへ移動 |
+| `Ctrl+k` | 上ウィンドウへ移動 |
+| `Ctrl+l` | 右ウィンドウへ移動 |
+| `Alt+j` | 行を下に移動 (Visual mode) |
+| `Alt+k` | 行を上に移動 (Visual mode) |
+| `Tab` | インデント (Visual mode) |
+| `Shift+Tab` | インデント解除 (Visual mode) |
+| `Ctrl+c` | クリップボードにコピー (Visual mode) |
 
 ### Ghostty
 
