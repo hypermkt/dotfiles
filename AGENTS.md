@@ -4,6 +4,7 @@
 この AGENTS.md は、dotfiles リポジトリに対して AI（Claude Code / Gemini CLI）が
 コード生成・修正・提案を行う際のルールを定義する。
 
+
 ## 主要な構成
 - **Shell**: zsh
 - **Editor**: Vim / Neovim

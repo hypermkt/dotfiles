@@ -1,9 +1,5 @@
 # dotfiles
 
-## Requirements
-
-- neocomplete requires Vim 7.3.885+ compiled with if_lua
-
 ## Setup
 
 ```
@@ -20,13 +16,12 @@ ln -s ./dotfiles/.zshrc ~/.zshrc
 ### .vimrc
 
 ```
-$ ln -s ~/dotfiles/.vimrc ~/.vimrc
+ln -s ~/dotfiles/.vimrc ~/.vimrc
 ```
 
 ### nvim
 ```
 ln -s ~/dotfiles/nvim ~/.config/nvim
-
 ```
 
 * `,e`: nvim-treeを開く
@@ -41,7 +36,6 @@ ln -s ~/dotfiles/nvim ~/.config/nvim
 * `Ctrl+b`: サイドバー開閉
 * `Ctrl+/`: コメントアウト切替
 * `Ctrl+h/j/k/l`: ウィンドウ移動
-
 
 ### Ghostty
 
