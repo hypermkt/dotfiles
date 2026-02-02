@@ -6,15 +6,22 @@ return {
   },
   config = function()
     require("mason").setup()
+    
+    -- LSPに補完機能を伝えるための設定
+    local capabilities = require("cmp_nvim_lsp").default_capabilities()
+
     require("mason-lspconfig").setup({
       -- ここに自動インストールしたい言語サーバーを列挙します
-      ensure_installed = { "lua_ls" },
+      ensure_installed = { "lua_ls", "solargraph" },
       handlers = {
         function(server_name)
-          require("lspconfig")[server_name].setup({})
+          require("lspconfig")[server_name].setup({
+            capabilities = capabilities,
+          })
         end,
         ["lua_ls"] = function()
           require("lspconfig").lua_ls.setup({
+            capabilities = capabilities,
             settings = {
               Lua = {
                 diagnostics = {
