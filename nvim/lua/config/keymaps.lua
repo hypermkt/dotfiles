@@ -10,6 +10,9 @@ vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Go to right window" })
 vim.keymap.set("n", "H", ":bprevious<CR>", { desc = "Go to previous buffer" })
 vim.keymap.set("n", "L", ":bnext<CR>", { desc = "Go to next buffer" })
 
+-- バッファを閉じる (Shift+x)
+vim.keymap.set("n", "X", ":bd<CR>", { desc = "Close current buffer" })
+
 -- Move lines (Alt+j/k)
 vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv", { desc = "Move line down" })
 vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv", { desc = "Move line up" })

@@ -65,6 +65,7 @@ ln -s ~/dotfiles/nvim ~/.config/nvim
 | `Ctrl+l` | 右ウィンドウへ移動 |
 | `H` | 左のタブ(バッファ)へ移動 |
 | `L` | 右のタブ(バッファ)へ移動 |
+| `X` | 現在のタブ(バッファ)を閉じる |
 | `Alt+j` | 行を下に移動 (Visual mode) |
 | `Alt+k` | 行を上に移動 (Visual mode) |
 | `Tab` | インデント (Visual mode) |
