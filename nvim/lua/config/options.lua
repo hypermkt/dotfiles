@@ -15,6 +15,9 @@ vim.opt.clipboard = "unnamedplus"
 -- 長い行を折り返さない
 vim.opt.wrap = false
 
+-- 未保存のバッファを維持する
+vim.opt.hidden = true
+
 -- 基本コマンド
 vim.cmd("syntax on")
 vim.cmd("filetype plugin indent on")
