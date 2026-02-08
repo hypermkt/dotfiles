@@ -53,6 +53,8 @@ ln -s ~/dotfiles/nvim ~/.config/nvim
 #### ウィンドウ・タブ操作
 | Key | Description |
 | :--- | :--- |
+| `:split` / `Ctrl+w s` | 画面を上下に分割 |
+| `:vsplit` / `Ctrl+w v` | 画面を左右に分割 |
 | `Ctrl+h` | 左ウィンドウへ移動 |
 | `Ctrl+j` | 下ウィンドウへ移動 |
 | `Ctrl+k` | 上ウィンドウへ移動 |
