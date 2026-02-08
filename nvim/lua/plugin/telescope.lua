@@ -38,6 +38,7 @@ return {
     vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
     vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
     vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
+    vim.keymap.set("n", "<leader>gs", builtin.git_status, { desc = "Telescope Git Status" })
 
     -- VS Code like keymaps
     vim.keymap.set("n", "<C-p>", builtin.find_files, { desc = "Search files" })

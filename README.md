@@ -84,9 +84,10 @@ ln -s ~/dotfiles/nvim ~/.config/nvim
 | `,ca` | コードアクション (Code Action) |
 | `C-k` | シグネチャヘルプ (引数情報の表示) |
 
-#### Git (Gitsigns)
+#### Git (Gitsigns / Telescope)
 | Key | Description |
 | :--- | :--- |
+| `,gs` | 変更されたファイルの一覧を表示 (Telescope) |
 | `]c` | 次の変更箇所へ移動 |
 | `[c` | 前の変更箇所へ移動 |
 | `,hp` | 変更箇所のプレビュー (Hunk Preview) |
