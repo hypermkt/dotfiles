@@ -27,12 +27,6 @@ ln -s ~/ghq/github.com/hypermkt/dotfiles ~/dotfiles
 ln -s ./dotfiles/.zshrc ~/.zshrc
 ```
 
-### .vimrc
-
-```
-ln -s ~/dotfiles/.vimrc ~/.vimrc
-```
-
 ### nvim
 ```
 ln -s ~/dotfiles/nvim ~/.config/nvim
