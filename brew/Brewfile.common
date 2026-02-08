@@ -6,6 +6,8 @@ brew "tig"
 brew "wget"
 brew "jq"
 brew "ag"
+brew "ripgrep"
+brew "fzf"
 
 # programming
 brew "rbenv"

@@ -1,8 +1,22 @@
 # dotfiles
 
+macOS + Ghostty + Neovim を中心とした開発環境。
+
+## Requirements
+
+- **Font**: [Nerd Fonts](https://www.nerdfonts.com/) (必須: アイコン表示のため)
+  - 推奨: `JetBrainsMono Nerd Font`
+- **Terminal**: [Ghostty](https://ghostty.org/) (推奨)
+
 ## Setup
 
+1. Homebrewのインストールとパッケージ一括導入
+```sh
+brew bundle --file brew/Brewfile.common
 ```
+
+2. シンボリックリンクの作成
+```sh
 # ローカルディレクトリの場所はよしなに修正
 ln -s ~/ghq/github.com/hypermkt/dotfiles ~/dotfiles
 ```
@@ -24,11 +38,39 @@ ln -s ~/dotfiles/.vimrc ~/.vimrc
 ln -s ~/dotfiles/nvim ~/.config/nvim
 ```
 
-* `,e`: nvim-treeを開く
+リーダーキーは `,` (カンマ) に設定されています。
+
+#### 共通操作
+* `,e`: nvim-tree (サイドバー) を開く
 * `,ff`: ファイル検索 (Telescope)
 * `,fg`: 文字列検索 (Telescope / 要ripgrep)
 * `,fb`: バッファ検索 (Telescope)
 * `,fh`: ヘルプ検索 (Telescope)
+* `Ctrl+p`: ファイル検索 (Telescope / find_files)
+* `Ctrl+f`: 文字列検索 (Telescope / live_grep)
+* `Ctrl+b`: サイドバー開閉
+
+#### ウィンドウ・タブ操作
+| Key | Description |
+| :--- | :--- |
+| `Ctrl+h` | 左ウィンドウへ移動 |
+| `Ctrl+j` | 下ウィンドウへ移動 |
+| `Ctrl+k` | 上ウィンドウへ移動 |
+| `Ctrl+l` | 右ウィンドウへ移動 |
+| `H` | 左のタブ(バッファ)へ移動 |
+| `L` | 右のタブ(バッファ)へ移動 |
+| `X` | 現在のタブ(バッファ)を閉じる |
+
+#### 編集操作
+
+| Key | Description |
+| :--- | :--- |
+| `Ctrl+/` | コメントアウト切替 |
+| `Option+j` | 選択行を下に移動 (Visual mode) |
+| `Option+k` | 選択行を上に移動 (Visual mode) |
+| `Tab` | インデント (Visual mode) |
+| `Shift+Tab` | インデント解除 (Visual mode) |
+| `Ctrl+c` | クリップボードにコピー (Visual mode) |
 
 #### LSP (Language Server Protocol)
 | Key | Description |
@@ -51,26 +93,6 @@ ln -s ~/dotfiles/nvim ~/.config/nvim
 | `,hr` | 変更のリセット (Hunk Reset) |
 | `,hs` | 変更のステージング (Hunk Stage) |
 | `,hb` | 行のコミット履歴を表示 (Blame Line) |
-
-#### VS Code風キーバインディング
-| Key | Description |
-| :--- | :--- |
-| `Ctrl+p` | ファイル検索 |
-| `Ctrl+f` | 文字列検索 |
-| `Ctrl+b` | サイドバー開閉 |
-| `Ctrl+/` | コメントアウト切替 |
-| `Ctrl+h` | 左ウィンドウへ移動 |
-| `Ctrl+j` | 下ウィンドウへ移動 |
-| `Ctrl+k` | 上ウィンドウへ移動 |
-| `Ctrl+l` | 右ウィンドウへ移動 |
-| `H` | 左のタブ(バッファ)へ移動 |
-| `L` | 右のタブ(バッファ)へ移動 |
-| `X` | 現在のタブ(バッファ)を閉じる |
-| `Alt+j` | 行を下に移動 (Visual mode) |
-| `Alt+k` | 行を上に移動 (Visual mode) |
-| `Tab` | インデント (Visual mode) |
-| `Shift+Tab` | インデント解除 (Visual mode) |
-| `Ctrl+c` | クリップボードにコピー (Visual mode) |
 
 ### Ghostty
 
