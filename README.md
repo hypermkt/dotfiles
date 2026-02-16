@@ -80,6 +80,12 @@ ln -s ~/dotfiles/nvim ~/.config/nvim
 | `,ca` | コードアクション (Code Action) |
 | `C-k` | シグネチャヘルプ (引数情報の表示) |
 
+#### Claude Code (claudecode.nvim)
+| Key | Description |
+| :--- | :--- |
+| `,cc` | Claude Code の表示/非表示を切り替え |
+| `,cs` | 選択範囲を Claude Code に送信 (Visual mode) |
+
 #### Git (Gitsigns / Telescope)
 | Key | Description |
 | :--- | :--- |
