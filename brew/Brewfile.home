@@ -1,6 +1,7 @@
 brew "packer"
 brew "terraform"
 brew "awscli"
+brew "claude-code"
 brew "gemini-cli"
 
 cask "spectacle"
