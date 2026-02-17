@@ -76,3 +76,6 @@ function select-history() {
 }
 zle -N select-history
 bindkey '^r' select-history # Ctrl+r に割り当て
+
+# Claude Code
+export PATH="$HOME/.local/bin:$PATH"
