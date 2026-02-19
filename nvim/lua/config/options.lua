@@ -18,6 +18,13 @@ vim.opt.wrap = false
 -- 未保存のバッファを維持する
 vim.opt.hidden = true
 
+-- ファイルタイプ
+vim.filetype.add({
+  extension = {
+    jbuilder = "ruby",
+  },
+})
+
 -- 基本コマンド
 vim.cmd("syntax on")
 vim.cmd("filetype plugin indent on")
