@@ -56,6 +56,30 @@ rm -rf ~/Library/Application\ Support/com.mitchellh.ghostty/
 mkdir -p ~/.config/ghostty && ln -s ~/dotfiles/ghostty/config ~/.config/ghostty/config
 ```
 
+### Claude Code
+
+```sh
+# シンボリックリンクを作成
+ln -s ~/dotfiles/claude/settings.json ~/.claude/settings.json
+ln -s ~/dotfiles/claude/CLAUDE.md ~/.claude/CLAUDE.md
+ln -s ~/dotfiles/claude/hooks ~/.claude/hooks
+```
+
+設定内容:
+
+| 設定 | 内容 |
+| :--- | :--- |
+| `settings.json` | プラグイン設定・フック |
+| `CLAUDE.md` | グローバルAIルール（全プロジェクト共通） |
+| `hooks/` | PreToolUse フックスクリプト |
+
+**フック:**
+
+| フック | 説明 |
+| :--- | :--- |
+| Stop | タスク完了時にmacOS通知（サウンド付き） |
+| PreToolUse (Bash) | `rm -rf` / `git push --force` / `git reset --hard` などの破壊的コマンドを検出してブロック |
+
 ### git config
 
 ```sh

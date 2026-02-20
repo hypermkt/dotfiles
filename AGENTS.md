@@ -24,12 +24,12 @@
 - 依存ツールの追加は最小限にする。
 
 ## Git コミットルール
-- コミットメッセージは英語で記述する。
+- コミットメッセージは日本語で記述する。
 - 以下の形式を推奨する：
 
-  feat: add ghostty config
-  fix: correct zsh alias path
-  chore: update README
+  feat: Ghostty設定を追加
+  fix: zshエイリアスのパスを修正
+  chore: READMEを更新
 
 ## dotfiles 特有の注意点
 - 個人の作業効率を最優先とする。
