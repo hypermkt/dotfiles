@@ -33,6 +33,19 @@ ln -s ./dotfiles/.zshrc ~/.zshrc
 ln -s ~/dotfiles/nvim ~/.config/nvim
 ```
 
+初回起動後、LSPサーバーを自動インストール（mason.nvim）。使用言語サーバー：
+
+| 言語 | サーバー |
+| :--- | :--- |
+| Ruby | [ruby-lsp](https://github.com/Shopify/ruby-lsp) |
+| Lua | lua_ls |
+
+ruby-lsp をグローバルで使う場合は事前にインストール：
+
+```sh
+gem install ruby-lsp
+```
+
 ### Ghostty
 
 ```sh

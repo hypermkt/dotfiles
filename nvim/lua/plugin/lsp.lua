@@ -12,7 +12,7 @@ return {
 
     require("mason-lspconfig").setup({
       -- ここに自動インストールしたい言語サーバーを列挙します
-      ensure_installed = { "lua_ls", "solargraph" },
+      ensure_installed = { "lua_ls", "ruby_lsp" },
       handlers = {
         function(server_name)
           require("lspconfig")[server_name].setup({
