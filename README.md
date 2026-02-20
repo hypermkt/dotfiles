@@ -33,6 +33,39 @@ ln -s ./dotfiles/.zshrc ~/.zshrc
 ln -s ~/dotfiles/nvim ~/.config/nvim
 ```
 
+### Ghostty
+
+```sh
+# macOS固有の設定を削除
+rm -rf ~/Library/Application\ Support/com.mitchellh.ghostty/
+
+# シンボリックリンクを作成
+mkdir -p ~/.config/ghostty && ln -s ~/dotfiles/ghostty/config ~/.config/ghostty/config
+```
+
+### git config
+
+```sh
+git config --global user.name "xxx"
+git config --global user.email xxx
+
+git config --global alias.s status
+git config --global alias.ci commit
+git config --global alias.b branch
+
+git config --global core.editor "vim"
+```
+
+### Software
+
+```sh
+brew bundle
+```
+
+## キーマップ
+
+### Neovim
+
 リーダーキーは `,` (カンマ) に設定されています。
 
 #### 共通操作
@@ -105,7 +138,7 @@ ln -s ~/dotfiles/nvim ~/.config/nvim
 | `,hs` | 変更のステージング (Hunk Stage) |
 | `,hb` | 行のコミット履歴を表示 (Blame Line) |
 
-#### LazyGit
+### LazyGit
 
 `,gg` でlazygitを起動。
 
@@ -138,32 +171,3 @@ ln -s ~/dotfiles/nvim ~/.config/nvim
 | `s` | stashに保存 |
 | `?` | キーバインド一覧を表示 |
 | `q` | lazygitを終了 |
-
-### Ghostty
-
-```sh
-# macOS固有の設定を削除
-rm -rf ~/Library/Application\ Support/com.mitchellh.ghostty/
-
-# シンボリックリンクを作成
-mkdir -p ~/.config/ghostty && ln -s ~/dotfiles/ghostty/config ~/.config/ghostty/config
-```
-
-### git config
-
-```sh
-git config --global user.name "xxx"
-git config --global user.email xxx
-
-git config --global alias.s status
-git config --global alias.ci commit
-git config --global alias.b branch
-
-git config --global core.editor "vim"
-```
-
-### Software
-
-```sh
-brew bundle
-```
