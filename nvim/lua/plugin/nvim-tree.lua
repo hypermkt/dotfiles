@@ -41,6 +41,13 @@ return {
       filters = {
         dotfiles = false,
       },
+      actions = {
+        open_file = {
+          window_picker = {
+            enable = false,
+          },
+        },
+      },
     })
 
     -- <leader>e でツリーをトグル
