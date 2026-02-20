@@ -4,6 +4,9 @@ vim.g.mapleader = ","
 -- 行番号表示
 vim.opt.number = true
 
+-- カーソル行を強調表示
+vim.opt.cursorline = true
+
 -- インデント
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 2
