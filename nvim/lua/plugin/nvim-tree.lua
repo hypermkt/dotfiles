@@ -16,6 +16,9 @@ return {
       -- デフォルトのマッピングを適用
       api.config.mappings.default_on_attach(bufnr)
 
+      -- s はウィンドウ操作プレフィックスとして使うため無効化
+      vim.keymap.del('n', 's', { buffer = bufnr })
+
       -- 十字キーでディレクトリを展開・折り畳むための設定
       -- 右キー: ディレクトリを開く、またはファイルを開く
       vim.keymap.set('n', '<Right>', api.node.open.edit, opts('Open'))
