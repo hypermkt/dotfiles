@@ -23,12 +23,13 @@ ln -s ~/ghq/github.com/hypermkt/dotfiles ~/dotfiles
 
 ### zsh
 
-```
+```sh
 ln -s ./dotfiles/.zshrc ~/.zshrc
 ```
 
 ### nvim
-```
+
+```sh
 ln -s ~/dotfiles/nvim ~/.config/nvim
 ```
 
@@ -48,6 +49,7 @@ ln -s ~/dotfiles/nvim ~/.config/nvim
 | `Ctrl+b` | サイドバー開閉 |
 
 #### ウィンドウ・タブ操作
+
 | Key | Description |
 | :--- | :--- |
 | `:split` / `Ctrl+w s` | 画面を上下に分割 |
@@ -72,6 +74,7 @@ ln -s ~/dotfiles/nvim ~/.config/nvim
 | `Ctrl+c` | クリップボードにコピー (Visual mode) |
 
 #### LSP (Language Server Protocol)
+
 | Key | Description |
 | :--- | :--- |
 | `gd` | 定義ジャンプ (Go to Definition) |
@@ -81,15 +84,17 @@ ln -s ~/dotfiles/nvim ~/.config/nvim
 | `K` | ドキュメント表示 (Hover) |
 | `,rn` | リネーム (Rename) |
 | `,ca` | コードアクション (Code Action) |
-| `C-k` | シグネチャヘルプ (引数情報の表示) |
+| `Ctrl+k` | シグネチャヘルプ (引数情報の表示) |
 
 #### Claude Code (claudecode.nvim)
+
 | Key | Description |
 | :--- | :--- |
 | `,cc` | Claude Code の表示/非表示を切り替え |
 | `,cs` | 選択範囲を Claude Code に送信 (Visual mode) |
 
 #### Git (Gitsigns / Telescope)
+
 | Key | Description |
 | :--- | :--- |
 | `,gs` | 変更されたファイルの一覧を表示 (Telescope) |
@@ -136,7 +141,7 @@ ln -s ~/dotfiles/nvim ~/.config/nvim
 
 ### Ghostty
 
-```
+```sh
 # macOS固有の設定を削除
 rm -rf ~/Library/Application\ Support/com.mitchellh.ghostty/
 
@@ -159,6 +164,6 @@ git config --global core.editor "vim"
 
 ### Software
 
-```
+```sh
 brew bundle
 ```
