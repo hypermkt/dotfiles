@@ -21,6 +21,16 @@ vim.opt.wrap = false
 -- 未保存のバッファを維持する
 vim.opt.hidden = true
 
+-- 分割方向
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+
+-- undo履歴を永続化
+vim.opt.undofile = true
+
+-- LSP・gitsignsの反応を速く
+vim.opt.updatetime = 250
+
 -- ファイルタイプ
 vim.filetype.add({
   extension = {
