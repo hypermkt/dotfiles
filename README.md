@@ -35,14 +35,17 @@ ln -s ~/dotfiles/nvim ~/.config/nvim
 リーダーキーは `,` (カンマ) に設定されています。
 
 #### 共通操作
-* `,e`: nvim-tree (サイドバー) を開く
-* `,ff`: ファイル検索 (Telescope)
-* `,fg`: 文字列検索 (Telescope / 要ripgrep)
-* `,fb`: バッファ検索 (Telescope)
-* `,fh`: ヘルプ検索 (Telescope)
-* `Ctrl+p`: ファイル検索 (Telescope / find_files)
-* `Ctrl+f`: 文字列検索 (Telescope / live_grep)
-* `Ctrl+b`: サイドバー開閉
+
+| Key | Description |
+| :--- | :--- |
+| `,e` | nvim-tree (サイドバー) を開く |
+| `,ff` | ファイル検索 (Telescope) |
+| `,fg` | 文字列検索 (Telescope / 要ripgrep) |
+| `,fb` | バッファ検索 (Telescope) |
+| `,fh` | ヘルプ検索 (Telescope) |
+| `Ctrl+p` | ファイル検索 (Telescope / find_files) |
+| `Ctrl+f` | 文字列検索 (Telescope / live_grep) |
+| `Ctrl+b` | サイドバー開閉 |
 
 #### ウィンドウ・タブ操作
 | Key | Description |
