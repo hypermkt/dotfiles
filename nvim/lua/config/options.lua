@@ -18,6 +18,9 @@ vim.opt.clipboard = "unnamedplus"
 -- 長い行を折り返さない
 vim.opt.wrap = false
 
+-- マウス操作を有効化（ウィンドウリサイズなど）
+vim.opt.mouse = "a"
+
 -- 未保存のバッファを維持する
 vim.opt.hidden = true
 
