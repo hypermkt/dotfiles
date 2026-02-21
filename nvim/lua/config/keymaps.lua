@@ -32,3 +32,7 @@ vim.keymap.set("v", "<S-Tab>", "<gv", { desc = "Outdent" })
 
 -- Copy with Ctrl+C (Visual mode)
 vim.keymap.set("v", "<C-c>", "y", { desc = "Copy to clipboard" })
+
+-- ファイルパスをクリップボードにコピー
+vim.keymap.set('n', '<leader>yp', ':let @+ = expand("%:p")<CR>', { desc = 'Copy Absolute Path' })
+vim.keymap.set('n', '<leader>yr', ':let @+ = expand("%")<CR>', { desc = 'Copy Relative Path' })
