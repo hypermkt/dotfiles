@@ -39,6 +39,7 @@ ln -s ~/dotfiles/nvim ~/.config/nvim
 | :--- | :--- |
 | Ruby | [ruby-lsp](https://github.com/Shopify/ruby-lsp) |
 | Lua | lua_ls |
+| PHP | [intelephense](https://intelephense.com/) |
 
 ruby-lsp をグローバルで使う場合は事前にインストール：
 
@@ -148,6 +149,8 @@ brew bundle
 | `Tab` | インデント (Visual mode) |
 | `Shift+Tab` | インデント解除 (Visual mode) |
 | `Ctrl+c` | クリップボードにコピー (Visual mode) |
+| `,yp` | 絶対パスをクリップボードにコピー |
+| `,yr` | 相対パスをクリップボードにコピー |
 
 #### LSP (Language Server Protocol)
 
@@ -168,6 +171,14 @@ brew bundle
 | :--- | :--- |
 | `,cc` | Claude Code の表示/非表示を切り替え |
 | `,cs` | 選択範囲を Claude Code に送信 (Visual mode) |
+
+#### Diff (diffview.nvim)
+
+| Key | Description |
+| :--- | :--- |
+| `,dv` | Diffview を開く |
+| `,dc` | Diffview を閉じる |
+| `,dh` | 現在のファイルの変更履歴を表示 |
 
 #### Git (Gitsigns / Telescope)
 
