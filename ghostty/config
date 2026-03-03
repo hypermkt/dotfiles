@@ -55,3 +55,6 @@ keybind = super+shift+bracket_right=unbind
 keybind = super+shift+[=previous_tab
 
 macos-option-as-alt = left
+
+# Command+CをNeovimにCtrl+Cとして送る（Visual modeでコピー用）
+keybind = super+c=text:\x03
