@@ -152,6 +152,19 @@ brew bundle
 | `,yp` | 絶対パスをクリップボードにコピー |
 | `,yr` | 相対パスをクリップボードにコピー |
 
+#### 補完 (blink.cmp)
+
+| Key | Description |
+| :--- | :--- |
+| `Ctrl+Space` | 補完候補を手動表示 |
+| `Ctrl+n` | 次の補完候補へ移動 |
+| `Ctrl+p` | 前の補完候補へ移動 |
+| `Enter` | 補完を確定 |
+| `Ctrl+y` | 補完を確定 |
+| `Ctrl+e` | 補完をキャンセル |
+| `Ctrl+b` | ドキュメントを上にスクロール |
+| `Ctrl+f` | ドキュメントを下にスクロール |
+
 #### LSP (Language Server Protocol)
 
 | Key | Description |

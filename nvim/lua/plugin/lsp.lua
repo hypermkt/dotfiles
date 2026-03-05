@@ -1,39 +1,42 @@
 return {
   "neovim/nvim-lspconfig",
   dependencies = {
-    "williamboman/mason.nvim",
-    "williamboman/mason-lspconfig.nvim",
+    "mason-org/mason.nvim",
+    "mason-org/mason-lspconfig.nvim",
   },
   config = function()
     require("mason").setup()
-    
+
     -- LSPに補完機能を伝えるための設定
-    local capabilities = require("cmp_nvim_lsp").default_capabilities()
+    local capabilities = require("blink.cmp").get_lsp_capabilities()
 
     require("mason-lspconfig").setup({
-      -- ここに自動インストールしたい言語サーバーを列挙します
-      ensure_installed = { "lua_ls", "ruby_lsp", "intelephense" },
-      handlers = {
-        function(server_name)
-          require("lspconfig")[server_name].setup({
-            capabilities = capabilities,
-          })
-        end,
-        ["lua_ls"] = function()
-          require("lspconfig").lua_ls.setup({
-            capabilities = capabilities,
-            settings = {
-              Lua = {
-                diagnostics = {
-                  globals = { "vim" },
-                },
-              },
-            },
-          })
-        end,
-      }
+      ensure_installed = { "lua_ls", "intelephense" },
     })
-    
+
+    -- 各LSPサーバーの設定
+    vim.lsp.config("lua_ls", {
+      capabilities = capabilities,
+      settings = {
+        Lua = {
+          diagnostics = {
+            globals = { "vim" },
+          },
+        },
+      },
+    })
+
+    vim.lsp.config("intelephense", {
+      capabilities = capabilities,
+    })
+
+    -- ruby_lspはMasonを使わず、rbenv経由のものを直接使用
+    vim.lsp.config("ruby_lsp", {
+      capabilities = capabilities,
+    })
+
+    vim.lsp.enable({ "lua_ls", "intelephense", "ruby_lsp" })
+
     -- キーマッピング設定 (LSP機能用)
     vim.api.nvim_create_autocmd('LspAttach', {
       group = vim.api.nvim_create_augroup('UserLspConfig', {}),
