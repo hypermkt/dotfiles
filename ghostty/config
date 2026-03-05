@@ -56,5 +56,7 @@ keybind = super+shift+[=previous_tab
 
 macos-option-as-alt = left
 
+window-theme = ghostty
+
 # Command+CをNeovimにCtrl+Cとして送る（Visual modeでコピー用）
 keybind = super+c=text:\x03
