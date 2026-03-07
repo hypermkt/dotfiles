@@ -1,4 +1,48 @@
 {
+  "permissions": {
+    "deny": [
+      "Bash(rm -rf:*)",
+      "Bash(sudo:*)",
+      "Bash(env:*)",
+      "Bash(printenv:*)",
+      "Bash(git push --force:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(git clean:*)"
+    ],
+    "ask": [
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(bundle install:*)",
+      "Bash(rails db:migrate:*)",
+      "Bash(rails db:drop:*)",
+      "Bash(rails db:reset:*)",
+      "Bash(rails db:rollback:*)",
+      "Bash(kill:*)"
+    ],
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(find:*)",
+      "Bash(wc:*)",
+      "Bash(pwd)",
+      "Bash(grep:*)",
+      "Bash(rg:*)",
+      "Bash(echo:*)",
+      "Bash(which:*)",
+      "Bash(type:*)",
+      "Bash(git log:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git show:*)",
+      "Bash(git branch:*)",
+      "Bash(ruby --version)",
+      "Bash(rails --version)",
+      "Bash(bundle exec rails --version)",
+      "Bash(ps:*)"
+    ]
+  },
   "enabledPlugins": {
     "commit-commands@claude-plugins-official": true,
     "code-review@claude-plugins-official": false
