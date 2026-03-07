@@ -205,6 +205,18 @@ brew bundle
 | `,hs` | 変更のステージング (Hunk Stage) |
 | `,hb` | 行のコミット履歴を表示 (Blame Line) |
 
+### Ghostty
+
+#### ペイン分割
+
+| Key | Description |
+| :--- | :--- |
+| `Cmd + D` | 縦に分割（右に開く） |
+| `Cmd + Shift + D` | 横に分割（下に開く） |
+| `Cmd + Option + ← / ↑ / ↓ / →` | ペイン移動 |
+| `Cmd + Ctrl + ←↑↓→` | ペインサイズ変更 |
+| `Cmd + W` | ペインを閉じる |
+
 ### LazyGit
 
 `,gg` でlazygitを起動。
