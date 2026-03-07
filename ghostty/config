@@ -56,7 +56,9 @@ keybind = super+shift+[=previous_tab
 
 macos-option-as-alt = left
 
-window-theme = ghostty
+window-theme = auto
+theme = Catppuccin Mocha
+macos-titlebar-style = tabs
 
-# Command+CをNeovimにCtrl+Cとして送る（Visual modeでコピー用）
-keybind = super+c=text:\x03
+clipboard-trim-trailing-spaces = true
+mouse-hide-while-typing = true
