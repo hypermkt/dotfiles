@@ -100,6 +100,21 @@ git config --global core.editor "vim"
 brew bundle
 ```
 
+#### パッケージのアップグレード
+
+Brewfileに定義したパッケージのみをアップグレードする場合は `brew/upgrade.sh` を使用する。
+
+```sh
+# common パッケージのみ
+./brew/upgrade.sh
+
+# home 環境も含む
+./brew/upgrade.sh home
+
+# work 環境も含む
+./brew/upgrade.sh work
+```
+
 ## キーマップ
 
 ### Neovim
