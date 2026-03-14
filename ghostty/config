@@ -48,7 +48,7 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
-font-family = "Menlo"
+font-family = "JetBrains Mono"
 font-size = 14
 
 keybind = super+shift+bracket_right=unbind
@@ -67,3 +67,5 @@ mouse-hide-while-typing = true
 
 shell-integration = zsh
 shell-integration-features = cursor,title
+
+copy-on-select = clipboard
