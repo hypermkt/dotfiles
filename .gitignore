@@ -1,3 +1,4 @@
 .vim/
 .idea/
 .zshrc.local
+.gitconfig.local

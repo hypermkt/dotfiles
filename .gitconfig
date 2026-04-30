@@ -1,6 +1,5 @@
-[user]
-	name = Makoto Chiba
-	email = hypermkt@gmail.com
+[include]
+	path = ~/.gitconfig.local
 [alias]
 	ci = commit
 	co = checkout
