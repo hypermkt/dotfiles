@@ -32,8 +32,8 @@ export LANG="ja_JP.UTF-8"
 # Git プロンプト表示
 # -------------------------------------------------------------------
 # カレントディレクトリがGit管理下なら、ブランチ名などを表示するスクリプトを読み込む
-if [ -f ~/.zsh/git-prompt.sh ]; then
-  source ~/.zsh/git-prompt.sh
+if [ -f /opt/homebrew/etc/bash_completion.d/git-prompt.sh ]; then
+  source /opt/homebrew/etc/bash_completion.d/git-prompt.sh
 fi
 
 # プロンプト内のGit表示オプション
