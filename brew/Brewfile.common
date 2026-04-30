@@ -11,7 +11,7 @@ brew "ripgrep"
 brew "fzf"
 
 # programming
-brew "rbenv"
+brew "mise"
 brew "gh"
 brew "git"
 brew "go"

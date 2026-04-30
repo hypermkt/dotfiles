@@ -20,9 +20,9 @@ alias g='cd $(ghq list -p | fzf --reverse --prompt="Repositories > ")'
 # -------------------------------------------------------------------
 # 言語・環境ツールの設定
 # -------------------------------------------------------------------
-# rbenv (Rubyのバージョン管理) の初期化
-if command -v rbenv > /dev/null; then
-  eval "$(rbenv init -)"
+# mise (Ruby/Node.jsなど複数言語のバージョン管理) の初期化
+if command -v mise > /dev/null; then
+  eval "$(mise activate zsh)"
 fi
 
 # 言語設定 (日本語UTF-8)
@@ -79,3 +79,6 @@ bindkey '^r' select-history # Ctrl+r に割り当て
 
 # Claude Code
 export PATH="$HOME/.local/bin:$PATH"
+
+# ローカル/業務固有の設定（リポジトリ管理外）
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
