@@ -125,7 +125,6 @@ Brewfileに定義したパッケージのみをアップグレードする場合
 
 | Key | Description |
 | :--- | :--- |
-| `,e` | nvim-tree (サイドバー) を開く |
 | `,ff` | ファイル検索 (Telescope) |
 | `,fg` | 文字列検索 (Telescope / 要ripgrep) |
 | `,fb` | バッファ検索 (Telescope) |

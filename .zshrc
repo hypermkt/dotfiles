@@ -95,3 +95,5 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # ローカル/業務固有の設定（リポジトリ管理外）
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
+
+export DISABLE_SPRING=true
