@@ -32,9 +32,22 @@ export LANG="ja_JP.UTF-8"
 # Git プロンプト表示
 # -------------------------------------------------------------------
 # カレントディレクトリがGit管理下なら、ブランチ名などを表示するスクリプトを読み込む
-if [ -f /opt/homebrew/etc/bash_completion.d/git-prompt.sh ]; then
-  source /opt/homebrew/etc/bash_completion.d/git-prompt.sh
+_git_prompt_sh=""
+for _p in \
+  /opt/homebrew/etc/bash_completion.d/git-prompt.sh \
+  /usr/local/etc/bash_completion.d/git-prompt.sh; do
+  if [ -f "$_p" ]; then
+    _git_prompt_sh="$_p"
+    break
+  fi
+done
+
+if [ -n "$_git_prompt_sh" ]; then
+  source "$_git_prompt_sh"
+elif ! command -v __git_ps1 > /dev/null 2>&1; then
+  __git_ps1() { :; }
 fi
+unset _git_prompt_sh _p
 
 # プロンプト内のGit表示オプション
 GIT_PS1_SHOWDIRTYSTATE=true      # 変更がある場合に記号を表示
