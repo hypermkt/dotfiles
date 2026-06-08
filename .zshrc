@@ -97,3 +97,5 @@ export PATH="$HOME/.local/bin:$PATH"
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
 export DISABLE_SPRING=true
+
+eval "$(git wt --init zsh)"
