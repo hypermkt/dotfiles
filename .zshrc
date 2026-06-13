@@ -91,7 +91,7 @@ zle -N select-history
 bindkey '^r' select-history # Ctrl+r に割り当て
 
 # Claude Code
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/go/bin:$PATH"
 
 # ローカル/業務固有の設定（リポジトリ管理外）
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
