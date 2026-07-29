@@ -53,7 +53,7 @@ return {
       },
     })
 
-    -- <C-b> でツリーをトグル（VS Code のサイドバートグルに相当）
-    vim.keymap.set('n', '<C-b>', ':NvimTreeToggle<CR>', { silent = true, desc = 'Toggle NvimTree' })
+    -- <C-t> でツリーをトグル（t = tree。デフォルトの <C-b>（1画面上スクロール）を潰さないため）
+    vim.keymap.set('n', '<C-t>', ':NvimTreeToggle<CR>', { silent = true, desc = 'Toggle NvimTree' })
   end
 }

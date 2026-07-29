@@ -131,7 +131,7 @@ Brewfileに定義したパッケージのみをアップグレードする場合
 | `,fh` | ヘルプ検索 (Telescope) |
 | `Ctrl+p` | ファイル検索 (Telescope / find_files) |
 | `Ctrl+f` | 文字列検索 (Telescope / live_grep) |
-| `Ctrl+b` | サイドバー開閉 |
+| `Ctrl+t` | サイドバー開閉 (NvimTree / t = tree) |
 
 #### ウィンドウ・タブ操作
 
