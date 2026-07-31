@@ -20,7 +20,32 @@ vim.keymap.set("n", "H", ":bprevious<CR>", { desc = "Go to previous buffer" })
 vim.keymap.set("n", "L", ":bnext<CR>", { desc = "Go to next buffer" })
 
 -- バッファを閉じる (Shift+x)
-vim.keymap.set("n", "X", ":bd<CR>", { desc = "Close current buffer" })
+-- nvim-tree を開いていると :bd ではフォーカスがツリーへ移りタブが全て未選択になるため、
+-- 先に右隣のタブへ移動してから元のバッファを削除する
+vim.keymap.set("n", "X", function()
+  local target = vim.api.nvim_get_current_buf()
+
+  -- nvim-tree など一覧に出ないバッファでは何もしない
+  if not vim.bo[target].buflisted then
+    return
+  end
+
+  if vim.bo[target].modified then
+    vim.notify("変更が保存されていません", vim.log.levels.WARN)
+    return
+  end
+
+  vim.cmd("BufferLineCycleNext")
+  -- 他にタブがない場合は空バッファを表示する
+  if vim.api.nvim_get_current_buf() == target then
+    vim.cmd("enew")
+  end
+  vim.api.nvim_buf_delete(target, {})
+end, { desc = "Close current buffer" })
+
+-- タブ(バッファ)の並び替え (Alt+h/l)
+vim.keymap.set("n", "<A-h>", ":BufferLineMovePrev<CR>", { desc = "Move buffer left" })
+vim.keymap.set("n", "<A-l>", ":BufferLineMoveNext<CR>", { desc = "Move buffer right" })
 
 -- Move lines (Alt+j/k)
 vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv", { desc = "Move line down" })
